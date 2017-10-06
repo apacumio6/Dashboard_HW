@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>My Dashboard</title>
+  <!-- Bring in our bootstrap stylesheet -->
+  	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	
+</head>
+<body>
+	<header>
+		<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="" class="navbar-brand" style="font-size:20px;">Data Analytics</a>
+				</div>
+				<div class="collapse navbar-collapse" id="example">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="visualizations.html">Visualizations</a></li>
+						<li><a href="data.html">Data</a></li>
+						<li><a href="comparison.html">Comparison</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="jumbotron">
+			<div class="container">
+				<div class="container-fluid">
+					<div class="row">	
+						<div class="summary-content col-lg-6">
+
+							<div class="content1-heading">
+								<h2><strong>Summary: Latitude vs Aspects of Weather</strong></h2>
+								<hr>
+							</div>
+							<div class="media">
+								<div class="media-body">
+							    	<p>
+							    	<img class="img-circle" src="globe.gif" alt="Generic placeholder image" style="float:left; padding-right: 30px;">
+							    	The purpose of this project was to deteremine the correlation, if any, between the temperature, wind, humidity and cloudiness and the distance from the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+							    	</p>
+							    	<p>
+							    	Once we assembled the dataset, we used Matplotlib to plot the varios aspects of the weather with respect to latitude. This site provides the source data and visualizations for each aspect of the weather as well as the conslusion of our findings. 
+							    	</p>
+							  	</div>
+							</div>
+						</div>
+						<div class="visualizations-summary col-lg-5">
+
+							<div class="content1-heading">
+								<h2><strong>Visualizations</strong></h2>
+								<hr>
+							</div>
+							<div class="container-fluid" style="padding-top: 0px; margin-bottom: 15px;">
+								<div class="row">
+									<div class="col-lg-6">
+										<img class="img-thumbnail" src="cloud_vs_lat.PNG" alt="Generic placeholder image">
+									</div>
+									<div class="col-lg-6">
+										<img class="img-thumbnail" src="temp_vs_lat.PNG" alt="Generic placeholder image">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6">
+										<img class="img-thumbnail" src="wind_vs_lat.PNG" alt="Generic placeholder image">
+									</div>
+									<div class="col-lg-6">
+										<img class="img-thumbnail" src="hum_vs_lat.PNG" alt="Generic placeholder image">
+									</div>
+								</div>
+							</div>
+							<!-- <div class="media">
+								<div class="media-body">
+							    	<img class="img-thumbnail" src="cloud_vs_lat.PNG" alt="Generic placeholder image">
+							    	<img class="img-thumbnail" src="temp_vs_lat.PNG" alt="Generic placeholder image">
+							    	<img class="img-thumbnail" src="wind_vs_lat.PNG" alt="Generic placeholder image">
+							    	<img class="img-thumbnail" src="hum_vs_lat.PNG" alt="Generic placeholder image">
+							  	</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<footer>
+		<div class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+			<div class="container">
+				<div class="navbar-footer">
+					<a href="" class="navbar-brand navbar-midd">UCB Data Analytics 2017</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>

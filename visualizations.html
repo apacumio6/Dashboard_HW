@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>My Dashboard</title>
+  <!-- Bring in our bootstrap stylesheet -->
+  	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	
+</head>
+<body>
+	<script>
+	function myFunction() {
+	    var x = document.getElementById("temp_vs_lat");
+	    if (x.style.display === "none") {
+	        x.style.display = "block";
+	    } else {
+	        x.style.display = "none";
+	    }
+	}
+	</script>
+	<header>
+		<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand" style="font-size:20px;">Data Analytics</a>
+				</div>
+				<div class="collapse navbar-collapse" id="example">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="visualizations.html">Visualizations</a></li>
+						<li><a href="data.html">Data</a></li>
+						<li><a href="comparison.html">Comparison</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="jumbotron">
+			<div class="container">
+				<div class="container-fluid">
+					<div class="row">	
+						<div class="summary-content col-lg-6">
+							<div id="temp_vs_lat">
+								<div class="content1-heading">
+									<h2><strong>Temperature (F) vs Latitude</strong></h2>
+									<hr>
+								</div>
+								<div class="media">
+									<div class="media-body">
+								    	<p>
+								    	<img class="img-thumbnail" src="temp_vs_lat.PNG" alt="Generic placeholder image" style="float:left; padding-right: 30px;">
+								    	The scatterplot shows us that there is a strong correlation between the temperature and latitude. The temperature rises as we approach the equator.
+								    	</p>
+								  	</div>
+								</div>
+							</div>
+							<div id="hum_vs_lat" style="display: none;">
+								<div class="content1-heading">
+									<h2><strong>Temperature (F) vs Latitude</strong></h2>
+									<hr>
+								</div>
+								<div class="media">
+									<div class="media-body">
+								    	<p>
+								    	<img class="img-thumbnail" src="hum_vs_lat.PNG" alt="Generic placeholder image" style="float:left; padding-right: 30px;">
+								    	The scatterplot shows us that there is a strong correlation between the temperature and latitude. The temperature rises as we approach the equator.
+								    	</p>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="visualizations-summary col-lg-5">
+
+							<div class="content1-heading">
+								<h2><strong>Visualizations</strong></h2>
+								<hr>
+							</div>
+							<div class="container-fluid" style="padding-top: 0px; margin-bottom: 15px;">
+								<div class="row">
+									<div class="col-lg-6">
+										<img class="img-thumbnail" onclick="myFunction()" src="cloud_vs_lat.PNG" alt="Generic placeholder image">
+									</div>
+									<div class="col-lg-6">
+										<img class="img-thumbnail" onclick="myFunction()" src="temp_vs_lat.PNG" alt="Generic placeholder image">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6">
+										<img class="img-thumbnail" onclick="myFunction()" src="wind_vs_lat.PNG" alt="Generic placeholder image">
+									</div>
+									<div class="col-lg-6">
+										<img class="img-thumbnail" onclick="myFunction()" src="hum_vs_lat.PNG" alt="Generic placeholder image">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<footer>
+		<div class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+			<div class="container">
+				<div class="navbar-footer">
+					<a href="" class="navbar-brand navbar-midd">UCB Data Analytics 2017</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
